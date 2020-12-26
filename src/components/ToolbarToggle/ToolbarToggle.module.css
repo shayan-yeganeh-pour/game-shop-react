@@ -1,0 +1,20 @@
+.Toggle {
+    width: 35px;
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+}
+
+.Toggle div {
+    margin: 4px;
+    border: 1px solid white ;
+}
+
+
+.Close {
+    flex-flow: column;
+}
+
+.Open {
+    flex-flow: row;
+}
