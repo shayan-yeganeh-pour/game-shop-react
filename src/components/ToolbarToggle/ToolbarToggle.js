@@ -4,13 +4,13 @@ import React from 'react'
 
 const toggle = (props) => {
     let attachedClass = [classes.Toggle , classes.Close]
-   if(props.toggleIcon){
+   if(props.toggleAnimation){
      attachedClass = [classes.Toggle , classes.Open]
    }
     
 
     return(
-        <div onClick={props.toggleClick} className={attachedClass.join(" ")}>  
+          <div onClick={props.toggleClick} className={attachedClass.join(" ")}>  
                <div></div>
                <div></div>
                <div></div>

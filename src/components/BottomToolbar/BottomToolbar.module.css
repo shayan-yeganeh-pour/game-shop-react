@@ -4,7 +4,40 @@
     left: 0;
     margin: 0 auto;
     padding: 10px;
-    background-color: red;
+    background-color: #201D1D;
     position: absolute;
     box-sizing: border-box;
+    color: white;
+}
+
+.BtmToolbarBox {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.BtmToolbar a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: .2s ease-in-out;
+}
+
+.BtmToolbar a:hover {
+color: rgb(181,42,255);
+}
+
+.BtmToolbar p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.BtmToolbar ul {
+    list-style: none;
+
+
+}
+
+
+.BtmToolbar ul li{
+   padding: 10px;
+   
 }

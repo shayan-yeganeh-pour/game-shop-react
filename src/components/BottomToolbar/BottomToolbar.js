@@ -1,5 +1,6 @@
 import React from 'react'
 import classes from './BottomToolbar.module.css'
+import { Link } from "react-router-dom"
 
 
 const bottomToolbar = () => {
@@ -8,16 +9,25 @@ const bottomToolbar = () => {
 
     return(
         <div className={classes.BtmToolbar}>
-             <div className="row justify-content-center text-center">
-                 <div className="col-6 text-white">
-                     <ul>
-                         <li><a href="./index.js">صحفه اصلی</a></li>
-                         <li><a href="./index.js">صحفه اصلی</a></li>
-                         <li><a href="./index.js">صحفه اصلی</a></li>
+            <div className={classes.BtmToolbarBox}>
+             <div className="row justify-content-center text-center d-lg-block">
+                 <div className="col-12 ">
+                     <p>برای ارتباط با بخش پشتیبانی میتوانید از ایمیل زیر اقدام کنید . لازم به ذکر است ارسال محصولات بین 3 تا 24 ساع کاری زمان خواهد بر</p>
+                    <br />        
+                    <a type="email">example@example.com</a>
+                 </div>
+                 <hr className=""/>
+                 <div className="col-12">
+                     <ul className="d-lg-flex justify-content-center">
+                         <li><Link to="./">صحفه اصلی</Link></li>
+                         <li><Link to="./store">فروشگاه</Link></li> 
+                         <li><Link to="./about">درباره ما</Link></li>
                      </ul>
                  </div>
-                 <div className="col-6 ">sadsa</div>
+                 <hr className=""/>
+                 <div className="col-12"><p>این سایت تایع قوانین جمهوری اسلامی می باشد </p></div>
              </div>
+            </div>
         </div>
     )
 }
