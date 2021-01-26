@@ -84,6 +84,14 @@ const profileLobby = (
        </li>
        
      </ul> : null}
+     <hr />
+     <div className={classes.ProfileLobbyText}>
+         <p>لازم به ذکر است که آدرس و شماره تماس خود.</p>
+     </div>
+     <hr />
+     <div className={classes.ProfileLobbyText}>
+         <p>لازم به ذکر است که آدرس و شماره تماس خود.</p>
+     </div>
   </div>
 )
 

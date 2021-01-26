@@ -1,37 +1,6 @@
-.NewPost {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    margin: 50px auto;
- 
-    
-}
-
-.AdminLinks ul {
-    margin: 15px auto;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-.AdminLinks ul li {
-   margin: 0 20px;
-}
-
-.AdminLinks ul li a{
-    font-weight: bold;
-    color: black;
-    text-shadow: 0px 1px 1px grey;
-    letter-spacing: 1px;
-    
-}
- 
-
-
 .NewPostBox {
     text-align: center;
     width: 90%;
-
     justify-content: center;
     background-color: rgb(41, 39, 39);
     margin: 40px auto;

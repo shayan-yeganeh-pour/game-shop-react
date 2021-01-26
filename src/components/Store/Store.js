@@ -29,7 +29,7 @@ class Store extends Component {
          }
         this.setState({
             posts: fetchPost,
-            filterPosts: fetchPost
+            filterPosts: fetchPost.reverse()
         })
     })
 
@@ -110,7 +110,7 @@ class Store extends Component {
         <div className={classes.LeftSidedrawer}>
           <div className={classes.ProductsSideDrawer}>
               <div className={classes.ProductTitleList}>
-                <h3>جدید ترین ها</h3>
+                <h3>جدید ها</h3>
                 <div className={classes.ProductTitleListToggle}>News</div>
               </div>
            <ul>
