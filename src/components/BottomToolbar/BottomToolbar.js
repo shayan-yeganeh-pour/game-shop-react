@@ -18,7 +18,7 @@ const bottomToolbar = () => {
                  </div>
                  <hr className=""/>
                  <div className="col-12">
-                     <ul className="d-lg-flex justify-content-center">
+                     <ul className="d-lg-flex text-center justify-content-center ml-3">
                          <li><Link to="./">صحفه اصلی</Link></li>
                          <li><Link to="./store">فروشگاه</Link></li> 
                          <li><Link to="./about">درباره ما</Link></li>

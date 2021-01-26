@@ -1,35 +1,77 @@
 .Toolbar {
-    width: 100%;
-    height: 60px;
-    top: 0;
-    left: 0;
-    background: rgb(32, 29, 29);
-    color: white;        
-    display: flex;
-    flex-flow: row;
-    list-style: none;
-    text-align: center;
-    justify-content: space-between;
-    margin: 0 auto;
-    align-items: center;
-    position: fixed;
-    box-sizing: border-box;
+    width: 100%;  
+     top: 0;
+     left: 0;
+   
        
 }
 
+.ToolbarBox {
+  height: 60px;
+  width: 100%;
+  top: 0;
+  right: 0;
+  background: rgb(32, 29, 29);
+  color: white;        
+  display: flex;
+  flex-flow: row;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: space-between;
+  padding: 5px;
+  z-index: 100;
+  align-items: center;
+  position: fixed;
+}
+
 .Toolbar div {
-  margin: 10px;
+  margin: 0px;
 }
 
 
 .LogIn { 
   text-align: center;
   padding: 5px; 
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+   border-radius: 4px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 18px;
+  font-weight: 600;
   cursor: pointer;
+  margin: 0 5px;
   color: white;
+  position: relative;
+  background: none;
+  border: 1px solid #9A36FF;
+  transition: .4s ease;
+
 
   
 }
 
+.LogIn button {
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+ .ButtonOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 100%;
+  transition: .5s ease;
+  background-color: rgb(212, 44, 44);
+
+}
+
+
+.LogIn:hover  {
+  
+   box-shadow: 2px 0px 15px #5D50FF;
+}

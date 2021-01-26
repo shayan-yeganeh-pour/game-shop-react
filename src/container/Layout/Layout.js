@@ -3,13 +3,18 @@ import Auxilliary from '../../container/hoc/Auxilliary/Auxilliary';
 import Toolbar from '../../components/Toolbar/Toolbar';
 import SideDrawer from '../../components/SideDrawer/SideDrawer';
 import BottomToolbar from '../../components/BottomToolbar/BottomToolbar';
-import Login from '../../components/Login/Login'
+import LoginFirebase from '../../components/LoginFirebase/LoginFireabse';
+import ProfileIcon from '../../components/ProfileIcon/ProfileIcon'
 
 
 class Layout extends Component{
   state = {
       toggle: false,
-      showLogin: false
+     // showLogin: false,
+      showProfileIcon: true,
+      showProfileLobby: false,
+      showOrderList: false,
+      basketItems: []
   }
 
 toggleClickHandler = ()=> {
@@ -41,15 +46,53 @@ showLogin= ()=> {
 
 }
 
+showProfileIconHandler = () => {
+   const showProfile = this.state.showProfileIcon
+   const showProfileLobby = this.state.showProfileLobby
+   this.setState({
+       showProfileIcon: !showProfile
+   })
+   if(showProfile){
+      this.setState({
+          showProfileLobby: false,
+          showOrderList: false
+      })
+   }
+}
+
+
+showProfileLobbyHandler = () => {
+    const showProfileLobby = this.state.showProfileLobby
+    this.setState({
+        showProfileLobby: !showProfileLobby,
+        showOrderList: false
+    })
+}
+
+showOrderListHandler = () => {
+  const showOrderList = this.state.showOrderList
+   this.setState({
+         showOrderList: !showOrderList,
+         showProfileLobby: false
+   })
+}
+
 render(){
     return(
        <Auxilliary>
           <Toolbar toggleClicked={this.toggleClickHandler}
                     toggleAnimation={this.state.toggle}
-                    showLogin={this.showLogin}/>
-            <Login showLogin={this.state.showLogin}
+                    />
+            {/* <LoginFirebase showLogin={this.state.showLogin}
                    showBackdrop={this.state.showLogin}
-                   closeBackdrop={this.closeLoginBackdrop}/>
+                   closeBackdrop={this.closeLoginBackdrop}/> */}
+            <ProfileIcon showProfileIconHandler={this.showProfileIconHandler} 
+                         showProfileIcon={this.state.showProfileIcon}
+                         showProfileLobby={this.state.showProfileLobby}
+                         showProfileLobbyHandler={this.showProfileLobbyHandler}
+                         showOrderList={this.state.showOrderList}
+                         showOrderListHandler={this.showOrderListHandler}
+                         basket={this.state.basketItems}/>
            <SideDrawer sideDrawer={this.state.toggle}
                        showDrop={this.state.toggle}
                        closeDrop={this.closeBackdrop}/>         

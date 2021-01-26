@@ -1,0 +1,191 @@
+.Store {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.PostsBox{
+    width: 90%;
+
+    margin: 100px auto;
+}
+
+.Posts {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-flow: column;
+    
+    color: white;
+}
+
+.PostsSide {
+    display: flex;
+    box-sizing: border-box;
+    flex-flow: wrap;
+    
+}
+
+.PostsTitleList {
+    
+    padding: 10px;
+    margin: 10px auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: right;
+    font-size: 20px!important;
+    color: white;
+    background: #201D1D;
+    z-index: 95;
+}
+
+.PostsTitleListToggle {
+    position: absolute;
+    width: 100px;
+    padding: 15px;
+    left: 15px;
+    text-align: center;
+    top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(39, 37, 36);
+}
+
+.LeftSidedrawer {
+   width: 100%;
+   margin: 0 auto;
+   height: 100%;
+   color: black!important;
+   box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   font-size: 13px;
+}
+
+.LeftSidedrawer ul{
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+ }
+ .LeftSidedrawer li{
+   transition: .3s ease-in-out;
+   padding: 5px;
+   margin: 5px auto;
+   cursor: pointer;
+ }
+
+ .LeftSidedrawer li:hover{
+   opacity: .8;
+   color: #905ea8;
+ 
+  }
+ 
+
+
+
+ .LeftSidedrawer .ProductTitleList {
+     
+    padding: 10px;
+    margin: 10px auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: right;
+    font-size: 20px!important;
+    color: white;
+    background: #201D1D;
+    z-index: 95;
+
+ }
+
+
+ .ProductTitleListToggle {
+     position: absolute;
+     width: 100px;
+     padding: 15px;
+     left: 15px;
+     text-align: center;
+     top: 10px;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     background-color: rgb(39, 37, 36);
+    
+ }
+
+ .AlertAddition {
+     width: 300px;
+     
+     border-radius: 20px;
+     position: fixed;
+     box-sizing: border-box;
+     padding: 50px 40px;
+     background-color: #431955;
+ 
+    margin: 90px 60px;
+     color: azure;
+     text-align: center;
+     z-index: 92;
+ }
+
+ .AlertAddition .BasketCloseToggle{
+     width: 30px;
+     height: 30px;
+     border-radius: 20px;
+     position: absolute;
+     background-color: rgb(224, 17, 17);
+     left: 10px;
+     bottom: 95px;
+ }
+
+ @media(min-width:500px){
+
+ }
+
+ @media(min-width:992px){
+
+   .LeftSidedrawer {
+     
+       
+       color: white;
+   }
+
+    .LeftSidedrawer ul{
+      text-align: center;
+      padding: 0;
+      
+     }
+     .LeftSidedrawer li{
+       transition: .4s ease;
+    
+    
+      
+     }
+
+
+    
+
+      .ProductTitleList  {
+          padding: 20px!important;
+        font-size: 17px;
+        text-align: center!important;
+        margin: 10px auto!important;
+        font-weight: bold;
+    }
+
+
+    .ProductTitleList h3 {
+        font-size: 17px;
+        margin: 0 auto;
+        font-weight: bold;
+    }
+
+    .ProductTitleListToggle {
+      display: none;
+       
+    }
+
+ 
+ }
+

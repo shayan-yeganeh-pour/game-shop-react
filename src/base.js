@@ -1,7 +1,8 @@
-import firebase from "fierbase"
+import firebase from "firebase"
 import "firebase/storage"
+import "firebase/auth"
 
-export const app = firebase.initializeApp({
+ const app = firebase.initializeApp({
     "projectId": "game-shop-react",
     "appId": "1:294948387672:web:d576560742317f90e9032d",
     "storageBucket": "game-shop-react.appspot.com",
@@ -11,3 +12,5 @@ export const app = firebase.initializeApp({
     "messagingSenderId": "294948387672",
     "measurementId": "G-V7W4JKEBPH"
   })
+  
+  export default app

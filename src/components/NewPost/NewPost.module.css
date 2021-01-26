@@ -1,0 +1,86 @@
+.NewPost {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 50px auto;
+ 
+    
+}
+
+.NewPostBox {
+    text-align: center;
+    width: 90%;
+
+    justify-content: center;
+    background-color: rgb(41, 39, 39);
+    margin: 40px auto;
+    align-items: center;
+    box-sizing: border-box;
+    color: blanchedalmond;
+    margin-bottom: -20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.NotAble {
+  margin: 100px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.NewPostBox input {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.NewPostBox textarea {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+
+
+.NewImage img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    color:rgb(63, 179, 34);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background: url("../../icons/download.jpg");
+    background-position: center;
+    background-size: cover;
+    background-position-y: top;
+    height: 200px;
+}
+
+
+
+@media(min-width:768px) {
+
+
+    .NewImage {
+        margin: -8px auto;
+    }
+    .NewPostBox {
+        padding: 50px 40px;
+    }
+
+    .NewPostBox input {
+        width: 100%;
+        max-width: 400px;
+
+    }
+    .NewImage img {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .NewPostBox textarea {
+        width: 100%;
+        max-width: 400px;
+
+    }
+    
+}

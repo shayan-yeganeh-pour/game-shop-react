@@ -1,0 +1,40 @@
+.orderItems {
+     
+    width: 400px;
+    background: #3A3835;
+    background: -webkit-linear-gradient(top left, #3A3835, #20222C);
+    background: -moz-linear-gradient(top left, #3A3835, #20222C);
+    background: linear-gradient(to bottom right, #3A3835, #20222C);
+    font-size: 17px;
+    font-weight: 800;
+    color: white;
+    margin: 10px auto;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.orderItems .orderBody {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.orderItems .orderTitle {
+    margin: 0 auto;
+    
+}
+
+
+
+
+.orderImage {
+    margin: 0 -20px;
+}
+
+.orderImage img {
+    width: 70px;
+    height: 70px;
+    display: block;
+}
